@@ -1,7 +1,11 @@
 @import "tailwindcss";
 
-@theme {
+:root {
+  --font-pretendard: Pretendard, sans-serif;
+  --font-carter: "Carter One", cursive;
+}
 
+@theme {
   /* grayScale */
   --color-gray-900: #000000;
   --color-gray-800: #1e1e1e;
@@ -15,22 +19,39 @@
   --color-gray-100: #fafafa;
 
   /* primary */
-  --color-primary-600: #1E3A8A;
-  --color-primary-500: #3D569A;
-  --color-primary-400: #6174AD;
-  --color-primary-300: #8493BF;
-  --color-primary-200: #AAB5D3;
-  --color-primary-100: #D0D6E7;
-  --color-primary-50: #F0F2F7;
+  --color-primary-600: #1e3a8a;
+  --color-primary-500: #3d569a;
+  --color-primary-400: #6174ad;
+  --color-primary-300: #8493bf;
+  --color-primary-200: #aab5d3;
+  --color-primary-100: #d0d6e7;
+  --color-primary-50: #f0f2f7;
 
   /* surface */
-  --color-surface-red: #FF7F7F;
-  --color-surface-orange: #FFBF7F;
-  --color-surface-yellow: #F9EB7D;
-  --color-surface-green: #B4ED76;
-  --color-surface-blue: #7FD4FF;
-  --color-surface-indigo: #7F9BFF;
-  --color-surface-purple: #AE7FFF;
+  --color-surface-red: #ff7f7f;
+  --color-surface-orange: #ffbf7f;
+  --color-surface-yellow: #f9eb7d;
+  --color-surface-green: #b4ed76;
+  --color-surface-blue: #7fd4ff;
+  --color-surface-indigo: #7f9bff;
+  --color-surface-purple: #ae7fff;
 }
 
+@layer utilities {
+  .font-pretendard {
+    font-family: var(--font-pretendard);
+  }
 
+  .font-carter {
+    font-family: var(--font-carter);
+  }
+}
+
+html {
+  font-family: var(--font-pretendard), sans-serif;
+  background-color: white;
+}
+
+body {
+  height: 100vh;
+}
