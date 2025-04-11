@@ -35,15 +35,64 @@
   --color-surface-blue: #7fd4ff;
   --color-surface-indigo: #7f9bff;
   --color-surface-purple: #ae7fff;
+
+  --font-pretendard: var(--font-pretendard);
+  --font-carter: var(--font-carter);
 }
 
 @layer utilities {
-  .font-pretendard {
-    font-family: var(--font-pretendard);
+  
+  /* typography */
+  .heading1 {
+    font-size: 3rem;
+    line-height: 150%;
+    letter-spacing: -0.06em;
   }
 
-  .font-carter {
-    font-family: var(--font-carter);
+  .heading2 {
+    font-size: 2.5rem;
+    line-height: 150%;
+    letter-spacing: -0.0375rem;
+  }
+
+  .title {
+    font-size: 1.875rem;
+    line-height: 150%;
+    letter-spacing: -0.01875rem;
+  }
+
+  .subtitle1 {
+    font-size: 1.5rem;
+    line-height: 150%;
+    letter-spacing: -0.015rem;
+  }
+  .subtitle2 {
+    font-size: 1.25rem;
+    line-height: 150%;
+    letter-spacing: -0.00625rem;
+  }
+  .body1 {
+    font-size: 1rem;
+    line-height: 150%;
+  }
+  .body2 {
+    font-size: 0.75rem;
+    line-height: 150%;
+  }
+  .caption1 {
+    font-size: 0.75rem;
+    line-height: 150%;
+    letter-spacing: 0.015rem;
+  }
+  .caption2 {
+    font-size: 0.625rem;
+    line-height: 150%;
+    letter-spacing: 0.0125rem;
+  }
+  .caption3 {
+    font-size: 0.5rem;
+    line-height: 150%;
+    letter-spacing: 0.01rem;
   }
 }
 
