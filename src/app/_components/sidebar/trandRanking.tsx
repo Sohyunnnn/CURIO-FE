@@ -11,6 +11,7 @@ export default function TrendRanking() {
 
   const handleClick = () => {
     router.push(ROUTES.SEARCH);
+
   };
 
   const toggleDropdown = () => {
@@ -21,11 +22,11 @@ export default function TrendRanking() {
   const dummyTimestamp = "2024.04.20 17:32";
 
   return (
+
     <div className="flex w-75 flex-col border-y border-gray-200">
       <div className="flex items-center justify-between px-5 py-2.5">
         <div
           className="group body1 flex w-58 items-center gap-3 font-medium text-black"
-          onClick={() => handleClick()}
         >
           <span>1</span>
           <span className="cursor-pointer group-hover:underline">
